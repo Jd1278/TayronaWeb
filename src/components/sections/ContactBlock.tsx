@@ -7,9 +7,6 @@ export function ContactBlock() {
   return (
     <div className="rounded-lg space-y-8 border border-[#1C1917]/12 bg-[#F3EFE6] p-7 sm:p-10">
       <div className="space-y-2.5 border-b border-[#1C1917]/10 pb-6">
-        <p className="text-[11px] font-semibold tracking-[0.22em] text-[#5E1914] uppercase">
-          Confirmed Channels
-        </p>
         <h2 className="font-serif text-2xl text-[#1C1917] sm:text-3xl">
           Direct Hospitality Contact
         </h2>

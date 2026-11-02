@@ -17,7 +17,7 @@ export const FAQS: FAQ[] = [
     id: "faq-graze-box-sizes",
     question: "Which Graze Boxes are currently available and what are their prices?",
     answer:
-      "We offer four signature Graze Boxes in Canadian Dollars (CAD): Personal Graze Box ($39 CAD), Date Night Graze Box ($59 CAD), The Gathering Box ($95 CAD), and The Celebration Box ($130 CAD).",
+      "We offer handcrafted artisanal Graze Boxes and individual grazing selections in Canadian Dollars (CAD): The Mini Feast ($39 CAD), The Gathering Spread ($170 CAD), The Party Starter ($150 CAD), The Good Times Spread ($320 CAD), and Tayrona Grazing Cups ($18 CAD).",
     category: "graze-boxes",
     sortOrder: 2,
   },

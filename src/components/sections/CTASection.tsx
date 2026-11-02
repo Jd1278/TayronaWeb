@@ -31,21 +31,25 @@ export function CTASection() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
-              <Link
-                href="/quote?type=corporate_catering"
+              <a
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center justify-between rounded-md bg-[#1C1917] px-6 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:bg-[#5E1914]"
               >
                 <span>Request Catering or Grazing Quote</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
 
-              <Link
-                href="/quote?type=food_truck_booking"
+              <a
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center justify-between rounded-md border border-[#1C1917] bg-transparent px-6 py-4 text-xs font-semibold tracking-[0.18em] text-[#1C1917] uppercase transition-colors hover:bg-[#1C1917] hover:text-[#FAF7F2]"
               >
                 <span>Inquire About the Food Truck</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
 
               <div className="mt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#1C1917]/10 pt-4 text-xs text-[#57534E]">
                 <a

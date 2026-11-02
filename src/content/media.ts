@@ -436,6 +436,36 @@ export const MEDIA_ASSETS: Record<string, MediaAsset> = {
     category: "HERO",
     objectPosition: "object-center",
   },
+  "banner-charcuteria-hd": {
+    id: "banner-charcuteria-hd",
+    src: "/images/banners/banner-charcuteria.jpeg",
+    alt: "Artisanal charcuterie graze box spread styled with cured meats, cheeses, crackers and fruit preserves",
+    width: 1320,
+    height: 1206,
+    orientation: "landscape",
+    category: "CHARCUTERIE",
+    objectPosition: "object-center",
+  },
+  "charcuterie-grazing-cup": {
+    id: "charcuterie-grazing-cup",
+    src: "/images/charcutery/tayrona-grazing-cup.jpeg",
+    alt: "Tayrona Grazing Cup individual charcuterie cup with cured meats, cheese skewers and accompaniments",
+    width: 900,
+    height: 1600,
+    orientation: "portrait",
+    category: "CHARCUTERIE",
+    objectPosition: "object-[50%_35%]",
+  },
+  "food-truck-banner-highres": {
+    id: "food-truck-banner-highres",
+    src: "/images/food-truck/foodstruck.jpeg",
+    alt: "Tayrona Catering black mobile food truck on wheels in the Greater Toronto Area",
+    width: 4032,
+    height: 3024,
+    orientation: "landscape",
+    category: "FOOD_TRUCK",
+    objectPosition: "object-[50%_40%]",
+  },
 };
 
 /**

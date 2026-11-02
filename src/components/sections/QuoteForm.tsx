@@ -197,7 +197,7 @@ export function QuoteForm({
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="rounded-lg space-y-7 border border-[#1C1917]/12 bg-[#FAF7F2] p-7 sm:p-10"
+      className="form-fade-in rounded-lg space-y-7 border border-[#1C1917]/12 bg-[#FAF7F2] p-7 sm:p-10 shadow-sm transition-all duration-300"
     >
       {/* Mode Indicator Banner */}
       <div className="border-l-2 border-[#5E1914] bg-[#F3EFE6] px-4 py-3 text-xs leading-relaxed text-[#57534E]">
@@ -241,7 +241,7 @@ export function QuoteForm({
           name="inquiryType"
           value={inquiryType}
           onChange={(e) => setInquiryType(e.target.value as InquiryType)}
-          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3.5 text-sm text-[#1C1917] focus:border-[#5E1914] focus:outline-none"
+          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3.5 text-sm text-[#1C1917] transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
         >
           {Object.entries(INQUIRY_TYPE_LABELS).map(([key, label]) => (
             <option key={key} value={key}>
@@ -269,7 +269,7 @@ export function QuoteForm({
             aria-describedby={
               errors.selectedProductSlug ? "error-selectedProductSlug" : undefined
             }
-            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3.5 text-sm text-[#1C1917] focus:border-[#5E1914] focus:outline-none"
+            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3.5 text-sm text-[#1C1917] transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
           >
             <option value="">— Choose a Graze Box —</option>
             {products.map((prod) => (
@@ -309,7 +309,7 @@ export function QuoteForm({
             aria-invalid={Boolean(errors.fullName)}
             aria-describedby={errors.fullName ? "error-fullName" : undefined}
             placeholder="Your name or company contact"
-            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
           />
           {errors.fullName && (
             <p id="error-fullName" className="mt-1.5 text-xs font-medium text-[#5E1914]">
@@ -336,7 +336,7 @@ export function QuoteForm({
             aria-invalid={Boolean(errors.phone)}
             aria-describedby={errors.phone ? "error-phone" : undefined}
             placeholder="+1 (647) 000-0000"
-            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
           />
           {errors.phone && (
             <p id="error-phone" className="mt-1.5 text-xs font-medium text-[#5E1914]">
@@ -364,7 +364,7 @@ export function QuoteForm({
           aria-invalid={Boolean(errors.email)}
           aria-describedby={errors.email ? "error-email" : undefined}
           placeholder="you@example.com"
-          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
         />
         {errors.email && (
           <p id="error-email" className="mt-1.5 text-xs font-medium text-[#5E1914]">
@@ -408,7 +408,7 @@ export function QuoteForm({
             value={quantityOrGuestCount}
             onChange={(e) => setQuantityOrGuestCount(e.target.value)}
             placeholder={isDirectBoxOrder ? "e.g., 2 boxes" : "e.g., 40 guests"}
-            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+            className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
           />
         </div>
       </div>
@@ -428,7 +428,7 @@ export function QuoteForm({
           value={eventDetails}
           onChange={(e) => setEventDetails(e.target.value)}
           placeholder="e.g., Downtown Toronto office, North York residence, outdoor venue"
-          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
         />
       </div>
 
@@ -450,7 +450,7 @@ export function QuoteForm({
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? "error-message" : undefined}
           placeholder="Tell us about your Graze Box request, dietary notes, or the style of catering you are planning..."
-          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 focus:border-[#5E1914] focus:outline-none"
+          className="rounded-md mt-2 w-full border border-[#1C1917]/20 bg-[#FAF7F2] px-4 py-3 text-sm text-[#1C1917] placeholder:text-[#57534E]/60 transition-all duration-200 ease-out focus:border-[#5E1914] focus:ring-1 focus:ring-[#5E1914]/30 focus:outline-none"
         />
         {errors.message && (
           <p id="error-message" className="mt-1.5 text-xs font-medium text-[#5E1914]">
@@ -463,7 +463,7 @@ export function QuoteForm({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="rounded-md inline-flex w-full items-center justify-center gap-3 bg-[#5E1914] px-8 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:bg-[#1C1917] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+          className="rounded-md inline-flex w-full items-center justify-center gap-3 bg-[#5E1914] px-8 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-all duration-200 hover:bg-[#1C1917] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
         >
           {isSubmitting ? (
             <>

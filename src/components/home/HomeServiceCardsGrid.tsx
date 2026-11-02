@@ -24,30 +24,39 @@ export function HomeServiceCardsGrid() {
         {/* 2x2 Large Photographic Service Cards */}
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
           {cards.map((card) => {
-            const media = getMediaAsset(card.mediaId);
+            const hasMedia = Boolean(card.mediaId && card.mediaId.trim() !== "");
+            const media = hasMedia ? getMediaAsset(card.mediaId) : null;
             return (
               <Link
                 key={card.id}
                 href={card.href}
                 className="group relative flex min-h-[440px] flex-col justify-end overflow-hidden rounded-lg border border-[#FAF7F2]/12 bg-[#1C1917] p-8 sm:min-h-[520px] sm:p-10 lg:min-h-[580px] lg:p-12 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C89D54]"
               >
-                {/* Full-Bleed High-Impact Photography */}
-                <Image
-                  src={media.src}
-                  alt={media.alt}
-                  width={media.width}
-                  height={media.height}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className={`absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${
-                    media.objectPosition ?? "object-center"
-                  }`}
-                />
-
-                {/* Editorial Gradient Overlay for Crisp Typography */}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-[#181512]/90 via-[#181512]/35 to-[#181512]/10 transition-opacity duration-500 group-hover:from-[#181512]/95"
-                />
+                {/* Full-Bleed High-Impact Photography (rendered only if media exists) */}
+                {hasMedia && media ? (
+                  <>
+                    <Image
+                      src={media.src}
+                      alt={media.alt}
+                      width={media.width}
+                      height={media.height}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className={`absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${
+                        media.objectPosition ?? "object-center"
+                      }`}
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-gradient-to-t from-[#181512]/90 via-[#181512]/35 to-[#181512]/10 transition-opacity duration-500 group-hover:from-[#181512]/95"
+                    />
+                  </>
+                ) : (
+                  /* Elegant minimal editorial texture when card has no background image */
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-gradient-to-br from-[#231F1B] via-[#1C1917] to-[#141210] border border-[#FAF7F2]/5"
+                  />
+                )}
 
                 {/* Overlay Content */}
                 <div className="relative z-10 flex flex-col justify-end text-[#FAF7F2]">

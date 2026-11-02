@@ -108,10 +108,10 @@ export function HeroSection({
                   />
                   <div className="mt-2.5 flex items-center justify-between px-1 text-[11px] text-[#57534E]">
                     <span className="font-serif italic text-[#1C1917]">
-                      The Celebration Box
+                      The Good Times Spread
                     </span>
                     <span className="font-semibold tracking-wider text-[#5E1914] uppercase">
-                      $130 CAD
+                      $320 CAD
                     </span>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export function HeroSection({
                     sizes="(max-width: 768px) 40vw, 280px"
                   />
                   <p className="mt-2 px-1 font-serif text-xs italic text-[#1C1917]">
-                    Personal Graze • $39 CAD
+                    The Mini Feast • $39 CAD
                   </p>
                 </div>
 

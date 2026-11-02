@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Plus, Minus, ArrowUpRight } from "lucide-react";
 import type { FAQ } from "@/types/content";
 
@@ -87,20 +86,24 @@ export function HomeFAQSection({
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/contact"
+            <a
+              href="https://w.app/qxemtu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 rounded-md bg-[#5E1914] px-8 py-4 text-xs font-semibold tracking-[0.2em] text-[#FAF7F2] uppercase transition-colors hover:bg-[#C89D54] hover:text-[#181512]"
             >
               <span>Contact Tayrona Catering</span>
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
+            </a>
 
-            <Link
-              href="/quote"
+            <a
+              href="https://w.app/qxemtu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center rounded-md border border-[#FAF7F2]/30 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#181512]"
             >
               Request a Custom Quote
-            </Link>
+            </a>
           </div>
         </div>
       </div>

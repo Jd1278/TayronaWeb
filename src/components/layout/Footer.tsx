@@ -104,9 +104,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/quote" className="transition-colors hover:text-[#FAF7F2]">
+                <a
+                  href="https://w.app/qxemtu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-[#FAF7F2]"
+                >
                   Request a Quote
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/contact" className="transition-colors hover:text-[#FAF7F2]">

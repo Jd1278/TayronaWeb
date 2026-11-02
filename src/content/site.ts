@@ -24,7 +24,7 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   primaryCta: {
     label: "Request a Quote",
-    href: "/quote",
+    href: "https://w.app/qxemtu",
   },
 };
 
@@ -48,11 +48,11 @@ export const PAGE_DEFINITIONS: Record<string, PageDefinition> = {
     title: "Graze Boxes",
     seoTitle: "Artisanal Graze Boxes | Tayrona Catering Toronto / GTA",
     seoDescription:
-      "Explore Tayrona Catering's handcrafted charcuterie Graze Boxes in Toronto & the GTA: Personal Graze Box ($39 CAD), Date Night ($59 CAD), The Gathering ($95 CAD), and The Celebration ($130 CAD).",
+      "Explore Tayrona Catering's handcrafted charcuterie Graze Boxes in Toronto & the GTA: The Mini Feast ($39 CAD), The Gathering Spread ($170 CAD), The Party Starter ($150 CAD), The Good Times Spread ($320 CAD), and Tayrona Grazing Cup ($18 CAD).",
     eyebrow: "Curated Charcuterie Collection",
     headline: "Handcrafted Graze Boxes, Styled to Share.",
     subheadline:
-      "Four signature sizes thoughtfully composed with cured meats, artisanal cheeses, seasonal fruits, and accompaniments—prepared fresh for intimate evenings, gifting, and gatherings.",
+      "Signature sizes thoughtfully composed with cured meats, artisanal cheeses, seasonal fruits, and accompaniments—prepared fresh for intimate evenings, gifting, and gatherings.",
     heroMediaId: "charcuterie-personal",
   },
   catering: {

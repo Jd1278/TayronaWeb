@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function FoodTruckPage() {
   const truckService = getServiceBySlug("food-truck");
-  const bannerAsset = getMediaAsset("food-truck-banner-hero");
+  const bannerAsset = getMediaAsset("food-truck-banner-highres");
   const faqs = getFAQs("food-truck");
 
   return (

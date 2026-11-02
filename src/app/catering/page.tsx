@@ -61,12 +61,14 @@ export default function CateringPage() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/quote?type=corporate_catering"
+            <a
+              href="https://w.app/qxemtu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md inline-flex items-center justify-center border border-[#FAF7F2] bg-[#5E1914] px-8 py-4 text-xs font-semibold tracking-[0.2em] text-[#FAF7F2] uppercase transition-colors hover:border-[#C89D54] hover:bg-[#181512]"
             >
               Request a Catering Quote
-            </Link>
+            </a>
             <Link
               href="/quote?type=grazing_table"
               className="rounded-md inline-flex items-center justify-center border border-[#FAF7F2]/40 bg-[#181512]/50 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase backdrop-blur-xs transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#181512]"

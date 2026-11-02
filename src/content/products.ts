@@ -1,18 +1,17 @@
 import type { Product } from "@/types/content";
 
 /**
- * Confirmed Graze Box Products & Prices (Section 12):
- * - Personal Graze Box — $39 CAD
- * - Date Night Graze Box — $59 CAD
- * - The Gathering Box — $95 CAD
- * - The Celebration Box — $130 CAD
- *
- * Strict Rule: No invented headcounts, weight claims, or unverified dietary promises.
+ * Confirmed Graze Box Products & Prices (Updated):
+ * - The Mini Feast (formerly Personal Graze Box) — $39 CAD
+ * - The Gathering Spread (formerly Date Night Graze Box) — $170 CAD
+ * - The Party Starter (formerly The Gathering Box) — $150 CAD
+ * - The Good Times Spread (formerly The Celebration Box) — $320 CAD
+ * - Tayrona Grazing Cup (new) — $18 CAD
  */
 export const PRODUCTS: Product[] = [
   {
     id: "prod-personal-graze-box",
-    name: "Personal Graze Box",
+    name: "The Mini Feast",
     slug: "personal-graze-box",
     categoryId: "cat-graze-boxes",
     priceCAD: 39,
@@ -34,10 +33,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "prod-date-night-graze-box",
-    name: "Date Night Graze Box",
+    name: "The Gathering Spread",
     slug: "date-night-graze-box",
     categoryId: "cat-graze-boxes",
-    priceCAD: 59,
+    priceCAD: 170,
     currency: "CAD",
     primaryMediaId: "charcuterie-date-night",
     galleryMediaIds: ["charcuterie-date-night", "charcuterie-personal"],
@@ -56,10 +55,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "prod-the-gathering-box",
-    name: "The Gathering Box",
+    name: "The Party Starter",
     slug: "the-gathering-box",
     categoryId: "cat-graze-boxes",
-    priceCAD: 95,
+    priceCAD: 150,
     currency: "CAD",
     primaryMediaId: "charcuterie-gathering",
     galleryMediaIds: ["charcuterie-gathering", "charcuterie-celebration", "charcuterie-signature"],
@@ -78,10 +77,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "prod-the-celebration-box",
-    name: "The Celebration Box",
+    name: "The Good Times Spread",
     slug: "the-celebration-box",
     categoryId: "cat-graze-boxes",
-    priceCAD: 130,
+    priceCAD: 320,
     currency: "CAD",
     primaryMediaId: "charcuterie-celebration",
     galleryMediaIds: ["charcuterie-celebration", "charcuterie-signature", "charcuterie-gathering"],
@@ -97,5 +96,27 @@ export const PRODUCTS: Product[] = [
     pendingSpecificationsNote:
       "Our largest signature graze box; custom event quantities or full grazing table upgrades available by quote.",
     sortOrder: 4,
+  },
+  {
+    id: "prod-tayrona-grazing-cup",
+    name: "Tayrona Grazing Cup",
+    slug: "tayrona-grazing-cup",
+    categoryId: "cat-graze-boxes",
+    priceCAD: 18,
+    currency: "CAD",
+    primaryMediaId: "charcuterie-grazing-cup",
+    galleryMediaIds: ["charcuterie-grazing-cup"],
+    featured: true,
+    available: true,
+    fulfillmentModel: "direct_order_future",
+    ctaLabel: "Request This Box",
+    confirmedHighlights: [
+      "Individual handheld charcuterie presentation",
+      "Cured meat & cheese skewers with fruit accompaniments",
+      "Perfect for corporate receptions, mixers and activations",
+    ],
+    pendingSpecificationsNote:
+      "Order quantities and minimum counts can be arranged upon order request.",
+    sortOrder: 5,
   },
 ];

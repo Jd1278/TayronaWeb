@@ -123,7 +123,7 @@ export const HOME_MAIN_SERVICE_CARDS: HomeServiceCardItem[] = [
       "Multi-layered wooden grazing tables, executive corporate lunches, and warm buffet spreads styled for offices and gatherings across Toronto & the GTA.",
     ctaLabel: "Explore Catering",
     href: "/catering",
-    mediaId: "catering-grazing-table-hd",
+    mediaId: "",
   },
   {
     id: "home-card-food-truck",
@@ -153,6 +153,6 @@ export const HOME_MAIN_SERVICE_CARDS: HomeServiceCardItem[] = [
       "Four signature charcuterie and artisanal cheese boxes crafted fresh to order for intimate evenings, gifts, and effortless hosting.",
     ctaLabel: "Order Graze Boxes",
     href: "/graze-boxes",
-    mediaId: "charcuterie-celebration",
+    mediaId: "banner-charcuteria-hd",
   },
 ];
