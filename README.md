@@ -20,20 +20,17 @@ npm run typecheck  # Run TypeScript compiler check (tsc --noEmit)
 npm run build      # Create optimized production build
 ```
 
-## 3. Deployment Guide: Hostinger & Vercel
+## 3. Deployment (Hostinger Node.js Web App)
 
-### Option A — Hostinger with Node.js Web App Support (or Vercel)
-1. Connect the GitHub repository (`feature/tayrona-web-foundation` or `main`).
-2. Build command: `npm run build`
-3. Start command: `npm run start`
-4. Node.js version: `20.x` or `22.x+`
+The site is a Next.js **server** application; static export (`out/`) is not supported, because upcoming Square payments, checkout and quote handling need server-side routes.
 
-### Option B — Hostinger Shared / Static Hosting (`out/` Directory)
-If the target Hostinger plan does not run a persistent Node.js server, generate a full static export without changing application code:
+| Setting | Value |
+|---|---|
+| Repository / branch | `Jd1278/TayronaWeb` — `staging` (testing), `main` (production) |
+| Node.js | 20.x or 22.x (minimum 20.9) |
+| Root directory | repository root (the folder containing `package.json`) |
+| Install | `npm install` |
+| Build | `npm run build` |
+| Start | `npm run start` (listens on the `PORT` provided by the host) |
 
-```bash
-# PowerShell
-$env:NEXT_OUTPUT_MODE="export"; npm run build
-```
-
-This produces a self-contained static bundle inside `out/` ready to upload to Hostinger `public_html/`.
+Never commit `.env*` files; configure secrets (e.g. future Square keys) in the hosting panel.
