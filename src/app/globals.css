@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #faf7f2;
+    --bg-secondary: #f3efe6;
+    --bg-dark: #181512;
+    --text-primary: #1c1917;
+    --text-muted: #57534e;
+    --accent-wine: #5e1914;
+    --accent-gold: #c89d54;
+    --radius-card: 0.5rem;
+    --radius-btn: 0.375rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif {
+    font-family: var(--font-serif), Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  ::selection {
+    background-color: #5e1914;
+    color: #faf7f2;
+  }
+}
+
+@keyframes tayrona-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-tayrona-marquee {
+  display: flex;
+  width: max-content;
+  animation: tayrona-marquee 38s linear infinite;
+}
+
+.animate-tayrona-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-tayrona-marquee {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+}
