@@ -63,12 +63,14 @@ export default function FoodTruckPage() {
               Food Truck bookings across Toronto and the Greater Toronto Area are arranged via custom quote based on your event date, venue access, and guest count.
             </div>
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <Link
-                href="/quote?type=food_truck_booking"
+              <a
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md bg-[#C89D54] px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#181512] uppercase transition-colors hover:bg-[#FAF7F2]"
               >
                 Request a Food Truck Quote
-              </Link>
+              </a>
               <Link
                 href="/festivals"
                 className="inline-flex items-center justify-center rounded-md border border-[#FAF7F2]/40 bg-[#181512]/40 px-6 py-4 text-xs font-semibold tracking-[0.16em] text-[#FAF7F2] uppercase transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2]/10"

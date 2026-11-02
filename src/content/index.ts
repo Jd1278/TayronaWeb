@@ -44,7 +44,7 @@ export function getAllCategories(): Category[] {
 }
 
 export function getAllProducts(): Product[] {
-  return [...PRODUCTS].filter((p) => p.available).sort((a, b) => a.sortOrder - b.sortOrder);
+  return [...PRODUCTS].filter((p) => p.available).sort((a, b) => a.priceCAD - b.priceCAD);
 }
 
 export function getProductBySlug(slug: string): Product | undefined {

@@ -48,7 +48,7 @@ export const PAGE_DEFINITIONS: Record<string, PageDefinition> = {
     title: "Graze Boxes",
     seoTitle: "Artisanal Graze Boxes | Tayrona Catering Toronto / GTA",
     seoDescription:
-      "Explore Tayrona Catering's handcrafted charcuterie Graze Boxes in Toronto & the GTA: The Mini Feast ($39 CAD), The Gathering Spread ($170 CAD), The Party Starter ($150 CAD), The Good Times Spread ($320 CAD), and Tayrona Grazing Cup ($18 CAD).",
+      "Explore Tayrona Catering's handcrafted charcuterie Graze Boxes in Toronto & the GTA: Tayrona Grazing Cup ($18 CAD), The Mini Feast ($39 CAD), The Party Starter ($150 CAD), The Gathering Spread ($170 CAD), The Good Times Spread ($320 CAD), and Tayrona Board ($400 CAD).",
     eyebrow: "Curated Charcuterie Collection",
     headline: "Handcrafted Graze Boxes, Styled to Share.",
     subheadline:

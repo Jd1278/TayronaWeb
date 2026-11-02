@@ -125,13 +125,15 @@ export function HomeFoodTruckVertical() {
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-3.5 pt-1">
-              <Link
-                href="/quote?type=food_truck_booking"
+              <a
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md inline-flex items-center gap-2 bg-[#C89D54] px-6 py-3.5 text-xs font-semibold tracking-[0.18em] text-[#181512] uppercase transition-colors hover:bg-[#FAF7F2]"
               >
                 <span>Request Food Truck Quote</span>
                 <ArrowUpRight className="h-4 w-4" />
-              </Link>
+              </a>
               <Link
                 href="/festivals"
                 className="rounded-md inline-flex items-center border border-[#FAF7F2]/25 px-5 py-3.5 text-xs font-semibold tracking-[0.16em] text-[#FAF7F2] uppercase transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2]/10"

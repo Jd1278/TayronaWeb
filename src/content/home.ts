@@ -75,14 +75,14 @@ export const HOME_CIRCULAR_CATEGORIES: HomeCircularCategoryItem[] = [
     title: "Graze Boxes",
     subtitle: "Fixed-Price Artisanal Boxes",
     href: "/graze-boxes",
-    mediaId: "charcuterie-celebration",
+    mediaId: "banner-charcuteria-hd",
   },
   {
     id: "cat-circle-catering",
     title: "Catering",
     subtitle: "Grazing Tables & Spreads",
     href: "/catering",
-    mediaId: "catering-grazing-table-hd",
+    mediaId: "catering-tayrona-rice-event",
   },
   {
     id: "cat-circle-food-truck",
@@ -123,7 +123,7 @@ export const HOME_MAIN_SERVICE_CARDS: HomeServiceCardItem[] = [
       "Multi-layered wooden grazing tables, executive corporate lunches, and warm buffet spreads styled for offices and gatherings across Toronto & the GTA.",
     ctaLabel: "Explore Catering",
     href: "/catering",
-    mediaId: "",
+    mediaId: "catering-tayrona-rice-event",
   },
   {
     id: "home-card-food-truck",
@@ -143,14 +143,14 @@ export const HOME_MAIN_SERVICE_CARDS: HomeServiceCardItem[] = [
       "Handcrafted hors d'oeuvres, golden croquetas, empanadas, and curated reception tables tailored to private milestones and brand activations.",
     ctaLabel: "Explore Events",
     href: "/catering#sub-private-catering",
-    mediaId: "catering-event-platters-hd",
+    mediaId: "catering-event-event1-jpg",
   },
   {
     id: "home-card-graze-boxes",
     eyebrow: "04 · Ready-to-Serve Collection",
     title: "Graze Boxes",
     description:
-      "Four signature charcuterie and artisanal cheese boxes crafted fresh to order for intimate evenings, gifts, and effortless hosting.",
+      "Six signature charcuterie and artisanal cheese boxes crafted fresh to order for intimate evenings, gifts, and effortless hosting.",
     ctaLabel: "Order Graze Boxes",
     href: "/graze-boxes",
     mediaId: "banner-charcuteria-hd",

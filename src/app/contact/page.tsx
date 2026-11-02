@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Suspense } from "react";
 import { getMediaAsset, getPageDefinition } from "@/content";
-import { ContactBlock } from "@/components/sections/ContactBlock";
 import { QuoteForm } from "@/components/sections/QuoteForm";
 
 const pageDef = getPageDefinition("contact");
@@ -31,11 +30,12 @@ export default function ContactPage() {
       {/* Subtle dark overlay: separates the content from the photograph without hiding it */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#181512]/70 via-[#181512]/55 to-[#181512]/75"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#181512]/80 via-[#181512]/65 to-[#181512]/85"
       />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="mb-12 max-w-3xl space-y-4">
+        {/* Centered Editorial Header */}
+        <div className="mx-auto mb-12 max-w-2xl text-center space-y-4">
           <p className="text-[11px] font-semibold tracking-[0.24em] text-[#C89D54] uppercase">
             {pageDef.eyebrow}
           </p>
@@ -47,12 +47,9 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
-          <div className="rounded-lg shadow-xl shadow-black/25 lg:col-span-5">
-            <ContactBlock />
-          </div>
-
-          <div className="rounded-lg shadow-xl shadow-black/25 lg:col-span-7">
+        {/* Centered Form Container without empty columns or sidebars */}
+        <div className="mx-auto max-w-3xl transition-opacity duration-500 ease-out motion-reduce:transition-none">
+          <div className="rounded-lg shadow-2xl shadow-black/40 overflow-hidden">
             <Suspense
               fallback={
                 <div className="rounded-lg border border-[#1C1917]/12 bg-[#FAF7F2] p-10 text-sm text-[#57534E]">

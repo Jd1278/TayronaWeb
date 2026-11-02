@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.brandName}`,
   },
   description: homeMeta.seoDescription,
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: homeMeta.seoTitle,
     description: homeMeta.seoDescription,

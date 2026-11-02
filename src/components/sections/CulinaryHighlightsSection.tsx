@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { getCulinaryHighlights, getMediaAsset } from "@/content";
 import { SectionHeader } from "./SectionHeader";
@@ -15,16 +14,27 @@ export function CulinaryHighlightsSection() {
           title="Culinary Highlights"
           description="A closer look at the dishes, sandwiches, hors d'oeuvres, and grazing spreads prepared by Tayrona Catering for corporate and private gatherings across Toronto and the GTA."
           actionLabel="Request a Custom Menu Quote"
-          actionHref="/quote?type=corporate_catering"
+          actionHref="https://w.app/qxemtu"
         />
 
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
           {highlights.map((item) => {
             const asset = getMediaAsset(item.mediaId);
             return (
-              <Link
+              <a
                 key={item.id}
-                href={item.href}
+                id={
+                  item.id === "highlight-artisan-sandwiches"
+                    ? "sub-corporate-lunches"
+                    : item.id === "highlight-sweet-additions"
+                    ? "sub-buffets"
+                    : item.id === "highlight-grazing-table"
+                    ? "grazing-tables"
+                    : undefined
+                }
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative flex min-h-[440px] flex-col justify-end overflow-hidden rounded-lg bg-[#181512] p-8 sm:min-h-[520px] sm:p-10 lg:min-h-[560px] lg:p-12 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E1914]"
               >
                 {/* Full-Bleed High-Impact Photography */}
@@ -64,7 +74,7 @@ export function CulinaryHighlightsSection() {
                     <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </div>
-              </Link>
+              </a>
             );
           })}
         </div>

@@ -8,8 +8,8 @@ import {
   getProductBySlug,
   getSiteConfig,
 } from "@/content";
-import { CuratedImage } from "@/components/ui/CuratedImage";
 import { ProductCard } from "@/components/sections/ProductCard";
+import { ProductPhotoGallery } from "@/components/sections/ProductPhotoGallery";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -49,9 +49,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   }
 
   const primaryMedia = getMediaAsset(product.primaryMediaId);
-  const secondaryMediaList = product.galleryMediaIds
-    .filter((id) => id !== product.primaryMediaId)
-    .map((id) => getMediaAsset(id));
+  const galleryMedia = product.galleryMediaIds.map((id) => getMediaAsset(id));
   const otherProducts = getAllProducts().filter((p) => p.slug !== product.slug);
   const siteConfig = getSiteConfig();
 
@@ -71,33 +69,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
 
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-14">
-            {/* Left Column: Product Photography */}
-            <div className="space-y-4 lg:col-span-6">
-              <div className="rounded-lg border border-[#1C1917]/12 bg-[#F3EFE6] p-3 sm:p-4">
-                <CuratedImage
-                  asset={primaryMedia}
-                  priority
-                  aspectClassName="aspect-[3/4]"
-                  sizes="(max-width: 1024px) 92vw, 560px"
-                />
-              </div>
-
-              {secondaryMediaList.length > 0 && (
-                <div className="grid grid-cols-2 gap-4">
-                  {secondaryMediaList.slice(0, 2).map((secAsset) => (
-                    <div
-                      key={secAsset.id}
-                      className="rounded-lg border border-[#1C1917]/10 bg-[#F3EFE6] p-2"
-                    >
-                      <CuratedImage
-                        asset={secAsset}
-                        aspectClassName="aspect-[4/3]"
-                        sizes="(max-width: 1024px) 45vw, 260px"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
+            {/* Left Column: Product Photography & Interactive Gallery */}
+            <div className="lg:col-span-6">
+              <ProductPhotoGallery
+                primaryMedia={primaryMedia}
+                galleryMedia={galleryMedia}
+                productName={product.name}
+              />
             </div>
 
             {/* Right Column: Confirmed Product Details & Order Flow Initiation */}

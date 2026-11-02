@@ -36,12 +36,14 @@ export function Footer() {
               {siteConfig.editorialStatement}
             </p>
             <div className="pt-2">
-              <Link
-                href="/quote"
+              <a
+                href="https://w.app/qxemtu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md inline-flex items-center justify-center border border-[#C89D54]/50 bg-[#5E1914] px-6 py-3 text-[11px] font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#181512]"
               >
                 Start an Order or Quote
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -17,7 +17,7 @@ export const FAQS: FAQ[] = [
     id: "faq-graze-box-sizes",
     question: "Which Graze Boxes are currently available and what are their prices?",
     answer:
-      "We offer handcrafted artisanal Graze Boxes and individual grazing selections in Canadian Dollars (CAD): The Mini Feast ($39 CAD), The Gathering Spread ($170 CAD), The Party Starter ($150 CAD), The Good Times Spread ($320 CAD), and Tayrona Grazing Cups ($18 CAD).",
+      "We offer handcrafted artisanal Graze Boxes and individual grazing selections in Canadian Dollars (CAD): Tayrona Grazing Cup ($18 CAD), The Mini Feast ($39 CAD), The Party Starter ($150 CAD), The Gathering Spread ($170 CAD), The Good Times Spread ($320 CAD), and Tayrona Board ($400 CAD).",
     category: "graze-boxes",
     sortOrder: 2,
   },

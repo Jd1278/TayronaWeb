@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
   getFAQs,
   getMediaAsset,
   getPageDefinition,
-  getServiceBySlug,
 } from "@/content";
-import { ServiceFeature } from "@/components/sections/ServiceFeature";
 import { CulinaryHighlightsSection } from "@/components/sections/CulinaryHighlightsSection";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { CTASection } from "@/components/sections/CTASection";
@@ -20,7 +17,6 @@ export const metadata: Metadata = {
 };
 
 export default function CateringPage() {
-  const cateringService = getServiceBySlug("catering");
   const bannerAsset = getMediaAsset("catering-banner-hero");
   const faqs = getFAQs("catering");
 
@@ -69,32 +65,29 @@ export default function CateringPage() {
             >
               Request a Catering Quote
             </a>
-            <Link
-              href="/quote?type=grazing_table"
+            <a
+              href="https://w.app/qxemtu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md inline-flex items-center justify-center border border-[#FAF7F2]/40 bg-[#181512]/50 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase backdrop-blur-xs transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#181512]"
             >
               Inquire About Grazing Tables
-            </Link>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* 2. Catering & Grazing Hospitality (Images Removed, Balanced 3-Column Grid) */}
-      {cateringService && (
-        <ServiceFeature service={cateringService} theme="warm" />
-      )}
-
-      {/* 3. Culinary Highlights (6 Editorial Full-Bleed Overlay Cards) */}
+      {/* 2. Culinary Highlights (Editorial Full-Bleed Overlay Cards) */}
       <CulinaryHighlightsSection />
 
-      {/* 4. Catering FAQs (2-Column Layout with "Have Another Question?" Relocated Below Left Paragraph) */}
+      {/* 3. Catering FAQs */}
       <FAQAccordion
         faqs={faqs}
         eyebrow="Catering & Event Questions"
         title="Planning Your Event with Tayrona"
       />
 
-      {/* 5. Conversion CTA */}
+      {/* 4. Conversion CTA */}
       <CTASection />
     </>
   );

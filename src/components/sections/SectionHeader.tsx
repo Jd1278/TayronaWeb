@@ -59,17 +59,33 @@ export function SectionHeader({
 
       {actionLabel && actionHref && (
         <div className={isCentered ? "pt-2" : "shrink-0"}>
-          <Link
-            href={actionHref}
-            className={`group inline-flex items-center gap-2 border-b pb-1.5 text-xs font-semibold tracking-[0.18em] uppercase transition-colors ${
-              isDark
-                ? "border-[#C89D54] text-[#FAF7F2] hover:border-[#FAF7F2] hover:text-[#C89D54]"
-                : "border-[#5E1914] text-[#1C1917] hover:border-[#1C1917] hover:text-[#5E1914]"
-            }`}
-          >
-            <span>{actionLabel}</span>
-            <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Link>
+          {actionHref.startsWith("http") ? (
+            <a
+              href={actionHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group inline-flex items-center gap-2 border-b pb-1.5 text-xs font-semibold tracking-[0.18em] uppercase transition-colors ${
+                isDark
+                  ? "border-[#C89D54] text-[#FAF7F2] hover:border-[#FAF7F2] hover:text-[#C89D54]"
+                  : "border-[#5E1914] text-[#1C1917] hover:border-[#1C1917] hover:text-[#5E1914]"
+              }`}
+            >
+              <span>{actionLabel}</span>
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          ) : (
+            <Link
+              href={actionHref}
+              className={`group inline-flex items-center gap-2 border-b pb-1.5 text-xs font-semibold tracking-[0.18em] uppercase transition-colors ${
+                isDark
+                  ? "border-[#C89D54] text-[#FAF7F2] hover:border-[#FAF7F2] hover:text-[#C89D54]"
+                  : "border-[#5E1914] text-[#1C1917] hover:border-[#1C1917] hover:text-[#5E1914]"
+              }`}
+            >
+              <span>{actionLabel}</span>
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </Link>
+          )}
         </div>
       )}
     </div>
