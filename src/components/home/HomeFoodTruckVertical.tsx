@@ -126,7 +126,7 @@ export function HomeFoodTruckVertical() {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-3.5 pt-1">
               <a
-                href="https://w.app/qxemtu"
+                href="https://wa.link/vimg6x"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md inline-flex items-center gap-2 bg-[#C89D54] px-6 py-3.5 text-xs font-semibold tracking-[0.18em] text-[#181512] uppercase transition-colors hover:bg-[#FAF7F2]"

@@ -64,7 +64,7 @@ export default function FoodTruckPage() {
             </div>
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
-                href="https://w.app/qxemtu"
+                href="https://wa.link/vimg6x"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md bg-[#C89D54] px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#181512] uppercase transition-colors hover:bg-[#FAF7F2]"

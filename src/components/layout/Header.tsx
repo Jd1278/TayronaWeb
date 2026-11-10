@@ -60,7 +60,7 @@ export function Header() {
             {siteConfig.contact.phoneDisplay}
           </a>
           <a
-            href="https://w.app/qxemtu"
+            href="https://wa.link/vimg6x"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md inline-flex items-center justify-center bg-[#5E1914] px-5 py-3 text-[11px] font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors duration-300 hover:bg-[#1C1917] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5E1914]"
@@ -72,7 +72,7 @@ export function Header() {
         {/* Mobile Header Actions & Drawer Trigger */}
         <div className="flex items-center gap-2.5 sm:gap-3 lg:hidden">
           <a
-            href="https://w.app/qxemtu"
+            href="https://wa.link/vimg6x"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md border border-[#5E1914] bg-[#5E1914] px-3.5 py-2 text-[10px] font-semibold tracking-[0.14em] text-[#FAF7F2] uppercase shadow-xs transition-colors hover:bg-[#1C1917] hover:border-[#1C1917] sm:px-4 sm:py-2.5 sm:text-[11px]"

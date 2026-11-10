@@ -118,7 +118,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Golden house-made croquetas, artisanal bruschetta, and bite-sized canapés styled on live-edge wooden boards for cocktail receptions and private milestones.",
     ctaLabel: "Request a Quote",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-croquetas-hd",
   },
   {
@@ -129,7 +129,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Multi-foot grazing installations layered with imported cheeses, cured charcuterie, seasonal berries, honeycomb, nuts, and artisanal crackers.",
     ctaLabel: "Inquire About Grazing",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-grazing-table-hd",
   },
   {
@@ -140,7 +140,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Chef-prepared sandwich platters on seeded sourdough, multigrain, and Rosemary focaccia—labelled and boxed for executive boardrooms and team lunches.",
     ctaLabel: "Plan Office Catering",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-lunch-chicken-hd",
   },
   {
@@ -151,7 +151,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Thoughtful vegan, vegetarian, and gluten-sensitive platters crafted with herb-roasted seasonal vegetables, house spreads, and vibrant greens.",
     ctaLabel: "Request Dietary Menu",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-lunch-vegan-hd",
   },
   {
@@ -162,7 +162,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Complete hot catering buffets featuring pan-seared proteins, signature sauces, rosemary roasted potatoes, and seasonal market sides.",
     ctaLabel: "Plan a Buffet Menu",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-chicken-mushroom-hd",
   },
   {
@@ -173,7 +173,7 @@ export const CULINARY_HIGHLIGHTS = [
     description:
       "Artisanal pound cakes, house caramel flan, and fresh berry platters designed to close office lunches and private celebrations on a warm note.",
     ctaLabel: "Add Dessert Platters",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
     mediaId: "catering-dessert-poundcake-hd",
   },
 ] as const;

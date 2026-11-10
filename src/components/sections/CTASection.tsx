@@ -32,7 +32,7 @@ export function CTASection() {
               </Link>
 
               <a
-                href="https://w.app/qxemtu"
+                href="https://wa.link/vimg6x"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between rounded-md bg-[#1C1917] px-6 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:bg-[#5E1914]"
@@ -42,7 +42,7 @@ export function CTASection() {
               </a>
 
               <a
-                href="https://w.app/qxemtu"
+                href="https://wa.link/vimg6x"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between rounded-md border border-[#1C1917] bg-transparent px-6 py-4 text-xs font-semibold tracking-[0.18em] text-[#1C1917] uppercase transition-colors hover:bg-[#1C1917] hover:text-[#FAF7F2]"

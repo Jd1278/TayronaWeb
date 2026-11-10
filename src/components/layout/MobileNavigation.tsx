@@ -252,7 +252,7 @@ export function MobileNavigation({ siteConfig }: MobileNavigationProps) {
               {siteConfig.contact.phoneDisplay}
             </a>
             <a
-              href="https://w.app/qxemtu"
+              href="https://wa.link/vimg6x"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-[#5E1914] hover:underline uppercase tracking-wider"

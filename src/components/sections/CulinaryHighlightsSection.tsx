@@ -14,7 +14,7 @@ export function CulinaryHighlightsSection() {
           title="Culinary Highlights"
           description="A closer look at the dishes, sandwiches, hors d'oeuvres, and grazing spreads prepared by Tayrona Catering for corporate and private gatherings across Toronto and the GTA."
           actionLabel="Request a Custom Menu Quote"
-          actionHref="https://w.app/qxemtu"
+          actionHref="https://wa.link/vimg6x"
         />
 
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
@@ -32,7 +32,7 @@ export function CulinaryHighlightsSection() {
                     ? "grazing-tables"
                     : undefined
                 }
-                href="https://w.app/qxemtu"
+                href="https://wa.link/vimg6x"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex min-h-[440px] flex-col justify-end overflow-hidden rounded-lg bg-[#181512] p-8 sm:min-h-[520px] sm:p-10 lg:min-h-[560px] lg:p-12 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5E1914]"

@@ -24,7 +24,7 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   primaryCta: {
     label: "Request a Quote",
-    href: "https://w.app/qxemtu",
+    href: "https://wa.link/vimg6x",
   },
 };
 

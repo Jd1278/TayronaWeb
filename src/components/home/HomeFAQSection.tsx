@@ -87,7 +87,7 @@ export function HomeFAQSection({
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://w.app/qxemtu"
+              href="https://wa.link/vimg6x"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 rounded-md bg-[#5E1914] px-8 py-4 text-xs font-semibold tracking-[0.2em] text-[#FAF7F2] uppercase transition-colors hover:bg-[#C89D54] hover:text-[#181512]"
@@ -97,7 +97,7 @@ export function HomeFAQSection({
             </a>
 
             <a
-              href="https://w.app/qxemtu"
+              href="https://wa.link/vimg6x"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-md border border-[#FAF7F2]/30 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#FAF7F2] uppercase transition-colors hover:border-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#181512]"
