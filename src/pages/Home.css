@@ -1,3 +1,7 @@
+.home-page{
+  background-color: var(--light-cream);
+}
+
 .hero {
   background-color: var(--light-cream);
 }
@@ -15,40 +19,32 @@
   text-align: center;
   background-color: var(--light-cream);
   color: var(--burgundy);
-}
-    
-.intro p {
+  border: 0.25rem solid var(--espresso);
+  border-radius: 4px;
   margin: 0;
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
   line-height: 1.5;
 }
+    
+.intro-text1 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
 
-/* Keeps the h1 for screen readers and search engines, but hides it visually like your mockup */
-/* .intro h1 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-   overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-} */
+.intro-text {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
 .services {
  
   margin-inline: auto;
 
 }
 .explore-button{
-    margin-top: 1.5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin: 1.5rem 0 0;
   padding: 0.8rem 1.25rem;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
-   text-decoration: none;
-  border: 2px solid transparent;
-  cursor: pointer;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
   background-color: var(--burgundy);
   color: var(--light-cream);
@@ -58,7 +54,6 @@
 .explore-button:hover {
   background-color: var(--dark-gold);
   transform: translateY(-1px);
-
 }
 
 

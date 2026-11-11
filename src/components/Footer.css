@@ -1,0 +1,149 @@
+.footer-card {
+  background: var(--espresso);
+  padding: 3.5rem 2.5rem 2rem 2.5rem;
+  color: var(--light-cream);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 0.5rem solid var(--dark-gold);
+}
+
+/* CTA Wrapper Container */
+.footer-cta {
+  max-width: 850px;
+}
+
+.footer-cta h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--light-cream);
+}
+
+/* Flexbox container for grouping buttons */
+.cta-buttons-group {
+  display: flex;
+  flex-direction: column; /* Stacks vertically on mobile */
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Base button styling */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width buttons on mobile for easy tapping */
+  background-color: var(--light-cream);
+  color: var(--burgundy);
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+  background-color: var(--dark-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer Grid for Contact & Social */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--light-cream);
+}
+
+.footer-column {
+  color: var(--light-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  color: var(--light-cream);
+  margin-bottom: 1rem;
+}
+
+/* Spacing between links comes from gap, not from margins on each link */
+.footer-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-info a,
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--light-cream);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* No space before :hover, so it targets the link itself */
+.contact-info a:hover,
+.social-links a:hover {
+  text-decoration: underline;
+  color: var(--dark-gold);
+}
+
+/* Copyright Line */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  padding-top: 1.5rem;
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 768px) {
+  .footer-card {
+    padding: 4.5rem 4rem 2.5rem 4rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-cta h2 {
+    font-size: 3.25rem;
+  }
+
+  .cta-buttons-group {
+    flex-direction: row; /* Horizontal side-by-side buttons on desktop */
+    flex-wrap: wrap; /* Allows neat wrapping if screen size is narrow */
+    gap: 1.25rem;
+  }
+
+  .cta-button {
+    width: auto; /* Auto width based on text padding on desktop */
+  }
+
+  .footer-column {
+    align-items: flex-start;
+  }
+
+  .footer-contact-links {
+    flex-direction: row;
+    flex-wrap: wrap; /* links drop to a second row instead of squeezing */
+    gap: 1rem 1.5rem; /* row gap, then column gap */
+  }
+
+  .contact-info a,
+  .social-links a {
+    white-space: nowrap; /* keeps each link on one line, so numbers don't break */
+  }
+}
