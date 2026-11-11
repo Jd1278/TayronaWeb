@@ -1,0 +1,74 @@
+.service-card {
+  border-top: 0.5rem solid var(--dark-gold);
+  
+}
+
+.service-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+ 
+}
+
+.service-card-content {
+  padding: 1.5rem 1.25rem 2rem;
+  text-align: center;
+
+  background-color: var(--burgundy);
+  color: var(--light-cream);
+}
+
+.service-card h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 9vw, 3rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.service-card ul {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.service-card a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 0.1rem solid var(--light-cream);
+  color: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px
+}
+
+.service-card a:hover,
+.service-card a:focus-visible {
+  background-color: var(--light-cream);
+  color: var(--burgundy);
+}
+
+@media (min-width: 48em) {
+  .service-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card-image {
+    aspect-ratio: 4 / 3;
+    max-height: 30rem;
+  }
+
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+  }
+}
